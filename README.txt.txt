@@ -1,0 +1,30 @@
+DISK SPACE MONITOR
+==================
+
+WHAT IT DOES:
+- Checks disk space every hour
+- Logs the disk usage to disk_log.txt
+- Creates alerts if disk is over 80% full
+
+FILES:
+- disk_monitor.py: The main script
+- disk_log.txt: Log of all disk checks
+- alerts.txt: Log of alerts when disk is full
+- run_monitor.bat: Quick way to run the script
+
+HOW TO USE:
+1. Double-click run_monitor.bat to run manually
+2. Or wait - it runs automatically every hour
+
+HOW TO CHANGE SETTINGS:
+1. Open disk_monitor.py in Notepad
+2. Find the line: THRESHOLD = 80
+3. Change 80 to any number you want
+4. Save the file
+
+REQUIREMENTS:
+- Python 3.x
+- psutil library (install with: pip install psutil)
+
+CREATED BY: Ganesh
+DATE: December 19, 2025
